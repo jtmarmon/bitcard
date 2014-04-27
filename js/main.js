@@ -32,8 +32,9 @@ $(document).ready(function(){
         var alpha = 0.6 * $(this).scrollTop() / 150;
 
 	    $("#p1").css('background-color', 'rgba(255, 255, 255,' + alpha + ')');
-	    $("#p2").css('background-color', 'rgba(255, 255, 255,' + alpha + ')');
-	    $('#p1 .theme-font').css('opacity', 1-alpha);
+	    $("#info-wrapper").css('opacity', alpha);
+	    $('#tagline').css('opacity', 1-alpha);
+	    $("#introducing").css('opacity', 1-alpha);
 	    if(alpha<=.2)
 	    	$("#tagline").css({'opacity':'1','color':'white'});
 	    else
