@@ -30,13 +30,17 @@ $(document).ready(function(){
         $("#p1").css('background-color', 'rgba(255, 255, 255,' + alpha + ')');
  $(document).scroll(function() {
         var alpha = 0.6 * $(this).scrollTop() / 150;
-        if(alpha>1)
-        	console.log(alpha);
+
 	    $("#p1").css('background-color', 'rgba(255, 255, 255,' + alpha + ')');
 	    $("#p2").css('background-color', 'rgba(255, 255, 255,' + alpha + ')');
 	    $('#p1 .theme-font').css('opacity', 1-alpha);
 
  		 var percentageVisible = $(window).scrollTop()/$(window).height()
+ 		 percentageVisible+=.1;
+ 		  if(percentageVisible>=1)
+        	percentageVisible=1;
+	    $("#info-wrapper").css('left',(100-(1/percentageVisible)*100) + "%");
+	    console.log((1/percentageVisible)*100 + 100);
  		 if(percentageVisible>=1)
  		 	percentageVisible=1;
  		 var offset = 100 - percentageVisible*100;
