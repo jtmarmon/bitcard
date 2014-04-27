@@ -3,7 +3,7 @@ html{
   height: 100%;
 }
 body{
-  background:black;
+  background:linear-gradient(to right,rgba(255,230,20,.6), rgba(255,215,0,1));
   font-family: 'open sans', sans-serif !important;
   height:100%;
   width:100%;
@@ -13,7 +13,7 @@ body{
   width:100%;
 }
 .theme-font{
-  color:#FFD700;
+  color:white;
   font-weight: 100;
 }
 .big{
@@ -24,14 +24,13 @@ body{
   text-transform: uppercase;
   text-align: center;
   text-shadow: 3px 3px 10px  rgba(40,20,0,.1);
-  border-bottom:1px solid gold;
 }
 #tagline{
   text-align: center;
   font-size:30px;
   margin-top: 100px;
   opacity:0;
-  color:gold;
+  color:white;
 }
 
 #p2{
