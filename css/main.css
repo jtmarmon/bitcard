@@ -67,7 +67,7 @@ body{
 .info-standalone{
   background:rgba(240,240,240,1);
   width:25%;
-  height:40vw;
+  height:35vw;
   margin-right: 5%;
   display:inline-block;
   vertical-align: top;
@@ -115,13 +115,13 @@ body{
 }
 .info-heading{
   text-align: center;
-  font-size: 5vw;
+  font-size: 4vw;
   margin-bottom: 0;
   border-bottom: 0;
   color:#ff9100 ;
 }
 .info{
-  font-size:2vw;
+  font-size:1.5vw;
   text-align: center;
   color:black;
   text-shadow:5px 5px 5px rgba(0,0,0,.2);
