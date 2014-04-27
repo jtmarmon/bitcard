@@ -50,6 +50,7 @@ body{
   z-index: 20;
   margin:0;
   padding:0;
+  opacity:0;
 }
 .info-section{
   width: 50%;
