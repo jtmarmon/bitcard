@@ -36,7 +36,10 @@ $(document).ready(function(){
 	    $('#tagline').css('opacity', 1-alpha);
 	    $("#introducing").css('opacity', 1-alpha);
 	    if(alpha<=.2)
+	    {
 	    	$("#tagline").css({'opacity':'1','color':'white'});
+	    $("#info-wrapper").css('opacity', '0');
+	    }
 	    else
 	  	  $("#tagline").css({'opacity':'1','color':'rgba(0,0,0,' + alpha + ')'});
 
