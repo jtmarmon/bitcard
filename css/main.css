@@ -52,15 +52,59 @@ body{
   padding:0;
   opacity:0;
 }
+.info-row{
+  height:50%;
+  width:80%;
+  margin-left: 18%;
+  padding-top:0;
+}
+.info-standalone{
+  background:rgba(240,240,240,1);
+  width:25%;
+  height:140%;
+  margin-right: 5%;
+  display:inline-block;
+  vertical-align: top;
+  border-radius: 10px;
+  border: 1px solid rgba(150,132,107,.3);
+}
+.info-standalone:hover{
+  background:rgba(255,237,180,.5);
+}
 .info-section{
-  width: 50%;
+  width: 80%;
   height:40% ;
-  margin-bottom: 5%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 1%;
+  margin-left:10%;
   border-bottom: 1px solid black;
   padding:0;
   overflow: hidden;
+  display:inline-block;
+}
+#standalones{
+  position: absolute;
+  left:-100%;
+  padding-left: 5% !important;
+  width:90% !important;
+  margin: 0 5% !important;
+}
+.standalone-subtext{
+  text-align: center;
+  color:rgba(255,145,0,1);
+  display:inline;
+  text-shadow:10px 10px 50px rgba(0,0,0,.5);
+}
+
+.info-standalone > .info-heading{
+  font-size:35px !important;
+}
+.info-standalone > img{
+  width:50%;
+  padding-left: 25%;
+  padding-top: 10%;
+  margin:0;
+  display: block;
+
 }
 .info-heading{
   text-align: center;
@@ -140,7 +184,6 @@ body{
 #i-want-it>.big:hover{
   border:none;
   transition: all .7s linear;
-  color:rgba(255,145,0,1) !important;
 }
 #i-want-it:hover{
   transition: all .7s linear;
@@ -182,7 +225,7 @@ input[type="text"]
 }
 
 .bitcard-button:hover{
-  background-color:rgba(255,145,0,.8);
+  background:linear-gradient(to right,rgba(255,160,0,.8), rgba(255,145,0,1));
 }
 
 /*start james's card stuff*/
@@ -337,7 +380,7 @@ input[type="text"]
       
       .face.front 
       {
-        background: url('http://gobitcard.com/Bitcoin-creditcard.png')#ddd;
+        background: url('http://gobitcard.com/Bitcoin-creditcard.png')#eee;
         -webkit-transform:rotateY(0deg);
         -ms-transform:rotateY(0deg);
         transform:rotateY(0deg);
