@@ -39,7 +39,7 @@ $(document).ready(function(){
  		 percentageVisible+=.1;
  		  if(percentageVisible>=1)
         	percentageVisible=1;
-	    $("#info-wrapper").css('left',(100-(1/percentageVisible)*100) + "%");
+	   // $("#info-wrapper").css('left',(100-(1/percentageVisible)*100) + "%");
 	    console.log((1/percentageVisible)*100 + 100);
  		 if(percentageVisible>=1)
  		 	percentageVisible=1;
