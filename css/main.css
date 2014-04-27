@@ -11,6 +11,7 @@ body{
 #p1{
   height:100%;
   width:100%;
+  padding-top: 2%;
 }
 .theme-font{
   color:white;
@@ -24,6 +25,7 @@ body{
   text-transform: uppercase;
   text-align: center;
   text-shadow: 3px 3px 10px  rgba(40,20,0,.1);
+  border-bottom:1px solid white;
 }
 #tagline{
   text-align: center;
@@ -31,6 +33,10 @@ body{
   margin-top: 100px;
   opacity:0;
   color:white;
+  text-shadow: 3px 3px 10px  rgba(40,20,0,.40);
+}
+#p1 > .big{
+  margin-bottom: 2%;
 }
 
 #p2{
