@@ -51,6 +51,7 @@ body{
   position: absolute;
   left:0%;
   top:-20%;
+  opacity: 0;
 }
 .info-section{
   width: 50%;
