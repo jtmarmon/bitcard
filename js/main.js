@@ -29,7 +29,7 @@ $(document).ready(function(){
      var alpha = Math.min(0.4 * $(this).scrollTop() / 1, 0.9);
         $("#p1").css('background-color', 'rgba(255, 255, 255,' + alpha + ')');
  $(document).scroll(function() {
-        var alpha = 0.6 * $(this).scrollTop() / 150;
+        var alpha = 0.6 * $(this).scrollTop() / 350;
 
 	    $("#p1").css('background-color', 'rgba(255, 255, 255,' + alpha + ')');
 	    $("#info-wrapper").css('opacity', alpha);
