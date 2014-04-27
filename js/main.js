@@ -34,6 +34,10 @@ $(document).ready(function(){
 	    $("#p1").css('background-color', 'rgba(255, 255, 255,' + alpha + ')');
 	    $("#p2").css('background-color', 'rgba(255, 255, 255,' + alpha + ')');
 	    $('#p1 .theme-font').css('opacity', 1-alpha);
+	    if(alpha<=.2)
+	    	$("#tagline").css({'opacity':'1','color':'white'});
+	    else
+	  	  $("#tagline").css({'opacity':'1','color':'rgba(0,0,0,' + alpha + ')'});
 
  		 var percentageVisible = $(window).scrollTop()/$(window).height()
  		 percentageVisible+=.1;
