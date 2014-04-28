@@ -15,7 +15,7 @@ body{
   width:100%;
 }
 #p1{
-  height:190%;
+  height:200%;
   width:100%;
   padding-top: 2%;
 }
@@ -156,7 +156,7 @@ body{
   background-image: url('../img/store.jpg');
   background-size: 100% 100%;
   position: absolute;
-  top:190%;
+  top:200%;
 }
 
 #p3 > .big
