@@ -46,6 +46,17 @@ body{
   margin-bottom: 2%;
 }
 
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  
+  border-top: 30px solid rgba(240,240,240,.7);
+  margin: 0 auto;
+  transition: all .7s linear;
+}
+
 #p2{
    height:100%;
   width:100%;

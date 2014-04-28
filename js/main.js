@@ -20,7 +20,21 @@ function checkEmail(){
 		$('.bitcard-button').hide('slow');
 	}
 }
+var arrowCycle = true;
+function pulseArrow() {
+			arrowCycle = !arrowCycle;
+			if(arrowCycle)
+			{
+	        	$(".arrow-down").css('border-top-color', 'rgba(240,240,240,.7)');
+	        }
+	        else
+	        {
+	        	$(".arrow-down").css('border-top-color', 'rgba(240,240,240,.2)');
+	        }
+	    }
 $(document).ready(function(){
+	    
+	    setInterval(pulseArrow, 700);
 	setTimeout(function(){
 		$('#f1_container').animate({'opacity':'1'},2000,'linear');
 		$('#tagline').animate({'opacity':'1'}, 2000,'linear');
@@ -28,12 +42,14 @@ $(document).ready(function(){
      var alpha = Math.min(0.4 * $(this).scrollTop() / 1, 0.9);
         $("#p1").css('background-color', 'rgba(255, 255, 255,' + alpha + ')');
  $(document).scroll(function() {
+
         var alpha = 0.6 * $(this).scrollTop() / 300;
 
 	    $("#p1").css('background-color', 'rgba(255, 255, 255,' + alpha + ')');
 	    $("#info-wrapper").css('opacity', alpha);
 	    $('#tagline').css('opacity', 1-alpha);
 	    $("#introducing").css('opacity', 1-alpha);
+	    $(".arrow-down").css('opacity', 1-alpha);
 	    $("#f1_container").css('opacity', 1-alpha);
 	    if(alpha<=.2)
 	    {
